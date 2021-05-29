@@ -1,0 +1,3 @@
+
+EDITOR='emacsclient -t'
+QT_QPA_PLATFORMTHEME=gtk2

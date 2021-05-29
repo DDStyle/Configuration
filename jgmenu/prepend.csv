@@ -1,0 +1,4 @@
+^sep(  ArchLinux)
+Браузер,/opt/waterfox/waterfox,waterfox
+Файловый менеджер,pcmanfm,system-file-manager
+^sep()

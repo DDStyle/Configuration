@@ -1,0 +1,216 @@
+<!--
+
+ ▄▄▄  ▄▄▄  ▄▄▄▄▄▄▄▄  ▄▄▄   ▄▄  ▄▄    ▄▄ 
+ ███  ███  ██▀▀▀▀▀▀  ███   ██  ██    ██ 
+ ████████  ██        ██▀█  ██  ██    ██ 
+ ██ ██ ██  ███████   ██ ██ ██  ██    ██ 
+ ██ ▀▀ ██  ██        ██  █▄██  ██    ██ 
+ ██    ██  ██▄▄▄▄▄▄  ██   ███  ▀██▄▄██▀ 
+ ▀▀    ▀▀  ▀▀▀▀▀▀▀▀  ▀▀   ▀▀▀    ▀▀▀▀   
+
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+	<menu id = "root-menu" label = "Openbox">
+		<separator label = " OPENBOX"/>
+		<item label = " Терминал">
+			<action name = "Execute">
+				<execute>kitty</execute>
+			</action>
+		</item>
+		<item label = " Файловый менеджер">
+			<action name = "Execute">
+				<execute>pcmanfm</execute>
+			</action>
+		</item>
+		<menu id = "console-menu" label = " Консольные утилиты">
+			<item label = " Ranger">
+			<action name = "Execute">
+				<execute>kitty -e ranger</execute>
+			</action>
+		</item>
+		<item label = " Midnight Commander">
+			<action name = "Execute">
+				<execute>kitty -e mc</execute>
+			</action>
+		</item>
+		<item label = " Htop">
+			<action name = "Execute">
+				<execute>kitty -e htop</execute>
+			</action>
+		</item>
+		<item label = " Vim">
+			<action name = "Execute">
+				<execute>kitty -e vim</execute>
+			</action>
+		</item>
+		<item label = " ncmpcpp">
+			<action name = "Execute">
+				<execute>kitty -e ncmpcpp</execute>
+			</action>
+		</item>
+			</menu>
+		<separator />
+		<item label = " Настройка рабочего стола">
+				<action name = "Execute">
+					<execute>pcmanfm --desktop-pref</execute>
+				</action>
+			</item>
+		<item label = " Настройки панелей">
+				<action name = "Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+		<item label = " Персонализация">
+				<action name = "Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+
+			<menu id = "config-menu" label = " Файлы настроек">
+				<item label = " Настройка Openbox">
+				<action name = "Execute">
+					<execute>geany -i ~/.config/openbox/rc.xml</execute>
+				</action>
+			</item>
+			<item label = " Меню Openbox">
+				<action name = "Execute">
+					<execute>geany -i ~/.config/openbox/menu.xml</execute>
+				</action>
+			</item>
+			<item label = " Автозапуск Openbox">
+				<action name = "Execute">
+					<execute>geany -i ~/.config/openbox/autostart</execute>
+				</action>
+			</item>
+			<item label = " Переменные окружения Openbox">
+				<action name = "Execute">
+					<execute>geany -i ~/.config/openbox/enviroment</execute>
+				</action>
+			</item>
+			<item label = " Тема Openbox">
+				<action name = "Execute">
+					<execute>geany -i ~/.themes/tired-plum/openbox-3/themerc</execute>
+				</action>
+			</item>
+			<separator />
+			<item label = " Настройка kitty">
+				<action name = "Execute">
+					<execute>geany -i ~/.config/kitty/kitty.conf</execute>
+				</action>
+			</item>
+			<item label = " Настройка композитора">
+				<action name = "Execute">
+					<execute>geany -i ~/.config/picom/picom.conf</execute>
+				</action>
+			</item>
+			</menu>
+			<separator />
+			<menu id="create-menu" label=" Создать">
+				<item label = " Папку">
+			  <action name = "Execute">
+			    <execute>~/.config/openbox/scripts/create_folder.sh</execute>
+			  </action>
+			</item>
+				<item label = " Файл">
+			  <action name = "Execute">
+			    <execute>~/.config/openbox/scripts/create_file.sh</execute>
+			  </action>
+			</item>	
+			<item label = " Ссылка">
+			  <action name = "Execute">
+			    <execute>~/.config/openbox/scripts/create_desktop.sh</execute>
+			  </action>
+			</item>
+			<item label = " Документ">
+			  <action name = "Execute">
+			    <execute>~/.config/openbox/scripts/create_doc.sh</execute>
+			  </action>
+			</item>
+			<item label = " Презентация">
+			  <action name = "Execute">
+			    <execute>~/.config/openbox/scripts/create_pres.sh</execute>
+			  </action>
+			</item>
+			<item label = " Таблица">
+			  <action name = "Execute">
+			    <execute>~/.config/openbox/scripts/create_sheet.sh</execute>
+			  </action>
+			</item>
+			<item label = " Изображение">
+			  <action name = "Execute">
+			    <execute>~/.config/openbox/scripts/create_png.sh</execute>
+			  </action>
+			</item>
+			<item label = " 3D-объект">
+			  <action name = "Execute">
+			    <execute>~/.config/openbox/scripts/create_blend.sh</execute>
+			  </action>
+			</item>			
+			</menu>
+			<item label = " Вставить">
+			  <action name = "Execute">
+			    <execute>xdotool key control+v</execute>
+			  </action>
+			</item>
+			<item label = " Выделить всё">
+			  <action name = "Execute">
+			    <execute>xdotool key control+a</execute>
+			  </action>
+			</item>
+			<separator />
+			<item label = "MPD"/>
+			<item label = " Старт">
+			  <action name = "Execute">
+			    <execute>mpc play</execute>
+			  </action>
+			</item>
+			<item label = " Стоп">
+			  <action name = "Execute">
+			    <execute>mpc stop</execute>
+			  </action>
+			</item>
+			<item label = " Пауза">
+			  <action name = "Execute">
+			    <execute>mpc pause</execute>
+			  </action>
+			</item>
+			<item label = " Следующий">
+			  <action name = "Execute">
+			    <execute>mpc next</execute>
+			    <execute>notify-send "$(mpc)"</execute>
+			  </action>
+			</item>
+			<item label = " Предыдущий">
+			  <action name = "Execute">
+			    <execute>mpc next</execute>
+			  </action>
+			</item>
+			<item label = " Случайно">
+			  <action name = "Execute">
+			    <execute>mpc random & notify-send "$(mpc)"</execute>
+			  </action>
+			</item>
+			<item label = " Повтор">
+			  <action name = "Execute">
+			    <execute>sh -c 'mpc repeat & notify-send "$(mpc)"'</execute>
+			  </action>
+			</item>
+			<separator />
+			<item label = " Убить приложение">
+			  <action name = "Execute">
+			    <execute>xkill</execute>
+			  </action>
+			</item>
+			
+			<item label = " Обновить">
+				<action name = "Reconfigure"/>
+			</item>
+			<item label = " Выключение...">
+				<action name="Execute">
+					<execute>systemctl poweroff</execute>
+      				</action>
+			</item>
+	</menu>
+
+    </openbox_menu>

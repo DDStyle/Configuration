@@ -1,0 +1,9 @@
+^sep()
+Exit,^checkout(exit),system-shutdown
+@search,,40,650,316,25,0,bottom,left,#FFFFFF,#00020C 0,search
+@rect,,15,650,370,25,0,bottom,left,#2C45CD,#000000 0,""
+^tag(exit)
+Suspend,systemctl -i suspend,system-log-out
+Reboot,systemctl -i reboot,system-reboot
+Poweroff,systemctl -i poweroff,system-shutdown
+
