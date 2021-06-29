@@ -1,0 +1,15 @@
+1621689238620	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1621689602411	Sync.Service	DEBUG	User-Agent: Waterfox/78.10.0 (Linux x86_64) FxSync/1.80.0.20210415101645.desktop
+1621689602412	Sync.Service	INFO	Starting sync at 2021-05-22 16:20:02 in browser session WI0MIwQq1Cmo
+1621689602412	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1621689602422	Sync.Status	INFO	Resetting Status.
+1621689602422	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1621689602425	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1621689602425	FirefoxAccounts	DEBUG	getOAuthToken enter
+1621689602427	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1621689602427	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1621689602429	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1621689602536	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/155119483/info/collections failed: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available
+1621689602537	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available
+1621689602541	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1621689602554	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available

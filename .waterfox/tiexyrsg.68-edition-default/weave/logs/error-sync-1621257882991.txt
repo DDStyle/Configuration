@@ -1,0 +1,79 @@
+1621254282934	Sync.LogManager	DEBUG	Flushing file log
+1621254282982	Sync.LogManager	DEBUG	Log cleanup threshold time: 1620390282982
+1621254283037	Sync.LogManager	DEBUG	Done deleting files.
+1621257882918	Sync.Service	DEBUG	User-Agent: Waterfox/78.10.0 (Linux x86_64) FxSync/1.80.0.20210415101645.desktop
+1621257882918	Sync.Service	INFO	Starting sync at 2021-05-17 16:24:42 in browser session pY-kmjeRoQ4_
+1621257882919	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1621257882927	Sync.Status	INFO	Resetting Status.
+1621257882927	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1621257882931	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1621257882931	FirefoxAccounts	DEBUG	getOAuthToken enter
+1621257882934	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1621257882934	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1621257882935	Sync.BrowserIDManager	INFO	Getting keys
+1621257882936	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1621257882939	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1621257882939	FirefoxAccounts	DEBUG	enter getAssertion()
+1621257882940	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1621257882942	FirefoxAccounts	DEBUG	getAssertionFromCert
+1621257882945	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1621257882945	Sync.BrowserIDManager	DEBUG	Getting a token using an Assertion
+1621257882945	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1621257882946	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1621257882954	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1621257882955	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1621257882957	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1621257882958	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:298:13
+async*getTokenFromBrowserIDAssertion@tokenserverclient.js:234:17
+getToken@browserid_identity.js:414:47
+async*_fetchTokenForUser@browserid_identity.js:431:23
+async*__ensureValidToken@browserid_identity.js:557:30
+_ensureValidToken@browserid_identity.js:545:44
+async*_getAuthenticationHeader@browserid_identity.js:584:18
+_buildHeaders@resource.js:113:33
+_createRequest@resource.js:152:32
+_doRequest@resource.js:180:32
+get@resource.js:285:17
+_fetchInfo@service.js:657:43
+sync@enginesync.js:85:35
+onNotify@service.js:1356:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1375:6
+sync/<@service.js:1339:18
+WrappedCatch@util.js:133:27
+sync@service.js:1340:7
+async*syncIfMPUnlocked/<@policies.js:672:20
+1621257882959	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1621257882959	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1621257882960	Sync.BrowserIDManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:298:13
+async*getTokenFromBrowserIDAssertion@tokenserverclient.js:234:17
+getToken@browserid_identity.js:414:47
+async*_fetchTokenForUser@browserid_identity.js:431:23
+async*__ensureValidToken@browserid_identity.js:557:30
+_ensureValidToken@browserid_identity.js:545:44
+async*_getAuthenticationHeader@browserid_identity.js:584:18
+_buildHeaders@resource.js:113:33
+_createRequest@resource.js:152:32
+_doRequest@resource.js:180:32
+get@resource.js:285:17
+_fetchInfo@service.js:657:43
+sync@enginesync.js:85:35
+onNotify@service.js:1356:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1375:6
+sync/<@service.js:1339:18
+WrappedCatch@util.js:133:27
+sync@service.js:1340:7
+async*syncIfMPUnlocked/<@policies.js:672:20
+1621257882964	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1621257882976	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1621257882981	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/155119483/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1621257882982	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1621257882982	Sync.Status	DEBUG	Status.service: error.login.failed => error.sync.failed
+1621257882982	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1621257882983	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1621257882990	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available

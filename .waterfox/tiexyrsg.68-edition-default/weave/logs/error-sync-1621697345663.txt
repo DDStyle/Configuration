@@ -1,0 +1,18 @@
+1621696745476	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1621697065675	Sync.RemoteTabs	INFO	Generating tab list with filter
+1621697065676	Sync.RemoteTabs	DEBUG	Processing client: {"id":"90a4b2a8a0f259272fa758f60bf4370a","type":"client","name":"Firefox на Meizu M3s","clientType":"phone","lastModified":1621625150270,"tabs":[]}
+1621697065677	Sync.RemoteTabs	INFO	Final tab list has 1 clients with 23 tabs.
+1621697345478	Sync.Service	DEBUG	User-Agent: Waterfox/78.10.0 (Linux x86_64) FxSync/1.80.0.20210415101645.desktop
+1621697345478	Sync.Service	INFO	Starting sync at 2021-05-22 18:29:05 in browser session WI0MIwQq1Cmo
+1621697345478	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1621697345493	Sync.Status	INFO	Resetting Status.
+1621697345493	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1621697345498	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1621697345499	FirefoxAccounts	DEBUG	getOAuthToken enter
+1621697345503	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1621697345504	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1621697345506	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1621697345639	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/155119483/info/collections failed: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available
+1621697345640	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available
+1621697345641	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1621697345659	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available

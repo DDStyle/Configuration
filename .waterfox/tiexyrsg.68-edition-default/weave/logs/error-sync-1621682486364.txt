@@ -1,0 +1,35 @@
+1621681897315	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1621681911276	Sync.RemoteTabs	INFO	Generating tab list with filter
+1621681911277	Sync.RemoteTabs	DEBUG	Processing client: {"id":"90a4b2a8a0f259272fa758f60bf4370a","type":"client","name":"Firefox на Meizu M3s","clientType":"phone","lastModified":1621625150270,"tabs":[]}
+1621681911279	Sync.RemoteTabs	INFO	Final tab list has 1 clients with 23 tabs.
+1621682485238	Sync.Service	DEBUG	User-Agent: Waterfox/78.10.0 (Linux x86_64) FxSync/1.80.0.20210415101645.desktop
+1621682485240	Sync.Service	INFO	Starting sync at 2021-05-22 14:21:25 in browser session WI0MIwQq1Cmo
+1621682485242	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1621682485257	Sync.Status	INFO	Resetting Status.
+1621682485257	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1621682485263	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1621682485263	FirefoxAccounts	DEBUG	getOAuthToken enter
+1621682485268	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1621682485268	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1621682485269	Sync.BrowserIDManager	INFO	Getting keys
+1621682485273	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1621682485279	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1621682485280	FirefoxAccounts	DEBUG	enter getAssertion()
+1621682485282	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1621682485283	FirefoxAccounts	DEBUG	getAssertionFromCert
+1621682485290	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1621682485291	Sync.BrowserIDManager	DEBUG	Getting a token using an Assertion
+1621682485291	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1621682485292	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1621682486144	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1621682486166	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 200
+1621682486167	Services.Common.TokenServerClient	DEBUG	Got token response: 200
+1621682486168	Services.Common.TokenServerClient	DEBUG	Successful token response
+1621682486169	Sync.Status	DEBUG	Status.login: success.login => success.login
+1621682486169	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1621682486177	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1621682486189	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1621682486331	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/155119483/info/collections failed: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available
+1621682486333	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available
+1621682486339	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1621682486359	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "<no message>"  nsresult: "0x805a2ffe (<unknown>)"  location: "<unknown>"  data: no] No traceback available

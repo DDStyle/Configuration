@@ -1,0 +1,107 @@
+1621430035131	Sync.LogManager	DEBUG	Flushing file log
+1621430035141	Sync.LogManager	DEBUG	Log cleanup threshold time: 1620566035141
+1621430035209	Sync.LogManager	DEBUG	Done deleting files.
+1621430208817	addons.xpi	ERROR	Failed to download system add-on gmp-gmpopenh264: Error: Failed downloading via XHR, status: 0, reason: error(resource://gre/modules/addons/ProductAddonChecker.jsm:349:16) JS Stack trace: fail@ProductAddonChecker.jsm:349:16
+EventListener.handleEvent*downloadFile/<@ProductAddonChecker.jsm:353:9
+downloadFile@ProductAddonChecker.jsm:319:10
+downloadAddon@ProductAddonChecker.jsm:500:22
+downloadAddon@XPIInstall.jsm:3985:49
+updateSystemAddons@XPIInstall.jsm:3995:54
+async*XPIProvider[meth]@XPIProvider.jsm:3194:28
+backgroundUpdateCheck/buPromise<@AddonManager.jsm:1373:13
+async*backgroundUpdateCheck@AddonManager.jsm:1381:7
+backgroundUpdateTimerHandler@AddonManager.jsm:3505:26
+notify@addonManager.js:174:25
+TM_notify/<@UpdateTimerManager.jsm:219:50
+TM_notify@UpdateTimerManager.jsm:290:7
+1621430208819	addons.xpi	ERROR	Failed to download system add-on gmp-widevinecdm: Error: Failed downloading via XHR, status: 0, reason: error(resource://gre/modules/addons/ProductAddonChecker.jsm:349:16) JS Stack trace: fail@ProductAddonChecker.jsm:349:16
+EventListener.handleEvent*downloadFile/<@ProductAddonChecker.jsm:353:9
+downloadFile@ProductAddonChecker.jsm:319:10
+downloadAddon@ProductAddonChecker.jsm:500:22
+downloadAddon@XPIInstall.jsm:3985:49
+updateSystemAddons@XPIInstall.jsm:3995:54
+async*XPIProvider[meth]@XPIProvider.jsm:3194:28
+backgroundUpdateCheck/buPromise<@AddonManager.jsm:1373:13
+async*backgroundUpdateCheck@AddonManager.jsm:1381:7
+backgroundUpdateTimerHandler@AddonManager.jsm:3505:26
+notify@addonManager.js:174:25
+TM_notify/<@UpdateTimerManager.jsm:219:50
+TM_notify@UpdateTimerManager.jsm:290:7
+1621433635123	Sync.Service	DEBUG	User-Agent: Waterfox/78.10.0 (Linux x86_64) FxSync/1.80.0.20210415101645.desktop
+1621433635123	Sync.Service	INFO	Starting sync at 2021-05-19 17:13:55 in browser session kUvzPkA4tlbX
+1621433635123	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1621433635126	Sync.Status	INFO	Resetting Status.
+1621433635126	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1621433635129	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1621433635129	FirefoxAccounts	DEBUG	getOAuthToken enter
+1621433635130	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1621433635130	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1621433635130	Sync.BrowserIDManager	INFO	Getting keys
+1621433635131	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1621433635132	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1621433635132	FirefoxAccounts	DEBUG	enter getAssertion()
+1621433635133	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1621433635133	FirefoxAccounts	DEBUG	getAssertionFromCert
+1621433635136	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1621433635136	Sync.BrowserIDManager	DEBUG	Getting a token using an Assertion
+1621433635136	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1621433635137	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1621433635141	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1621433635142	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1621433635143	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1621433635143	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:298:13
+async*getTokenFromBrowserIDAssertion@tokenserverclient.js:234:17
+getToken@browserid_identity.js:414:47
+async*_fetchTokenForUser@browserid_identity.js:431:23
+async*__ensureValidToken@browserid_identity.js:557:30
+_ensureValidToken@browserid_identity.js:545:44
+async*_getAuthenticationHeader@browserid_identity.js:584:18
+_buildHeaders@resource.js:113:33
+_createRequest@resource.js:152:32
+_doRequest@resource.js:180:32
+get@resource.js:285:17
+_fetchInfo@service.js:657:43
+sync@enginesync.js:85:35
+onNotify@service.js:1356:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1375:6
+sync/<@service.js:1339:18
+WrappedCatch@util.js:133:27
+sync@service.js:1340:7
+async*syncIfMPUnlocked/<@policies.js:672:20
+1621433635144	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1621433635144	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1621433635145	Sync.BrowserIDManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:298:13
+async*getTokenFromBrowserIDAssertion@tokenserverclient.js:234:17
+getToken@browserid_identity.js:414:47
+async*_fetchTokenForUser@browserid_identity.js:431:23
+async*__ensureValidToken@browserid_identity.js:557:30
+_ensureValidToken@browserid_identity.js:545:44
+async*_getAuthenticationHeader@browserid_identity.js:584:18
+_buildHeaders@resource.js:113:33
+_createRequest@resource.js:152:32
+_doRequest@resource.js:180:32
+get@resource.js:285:17
+_fetchInfo@service.js:657:43
+sync@enginesync.js:85:35
+onNotify@service.js:1356:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1375:6
+sync/<@service.js:1339:18
+WrappedCatch@util.js:133:27
+sync@service.js:1340:7
+async*syncIfMPUnlocked/<@policies.js:672:20
+1621433635147	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1621433635150	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1621433635153	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/155119483/info/collections?v=1.80.0 failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1621433635154	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1621433635154	Sync.Status	DEBUG	Status.service: error.login.failed => error.sync.failed
+1621433635154	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1621433635155	Sync.SyncScheduler	DEBUG	Sync error count has exceeded 3; enforcing backoff.
+1621433635155	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 5390352 ms.
+1621433635155	Sync.SyncScheduler	DEBUG	Next sync in 5390352 ms. (why=client-backoff-schedule)
+1621433635163	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available

@@ -1,0 +1,4 @@
+http:cdn.mathjax.org:80:.:	0	18760	http:cdn.mathjax.org:80:cdn.mathjax.org:443::n:1620913719:h2:y:1620824912:n::http://www.math24.ru|n:n:
+http:www.pca-cpa.org:80:.:	0	18769	http:www.pca-cpa.org:80:www.pca-cpa.org:443::n:1621704417:h2:y:1621679369:n::http://www.pca-cpa.org|n:n:
+http:iris-tg.ru:80:.:	0	18755	http:iris-tg.ru:80:iris-tg.ru:443::n:1620503733:h2:y:1620495775:n::http://iris-tg.ru|n:n:
+http:pngimg.com:80:.:	0	18754	http:pngimg.com:80:pngimg.com:443::n:1620410221:h2:y:1620390804:n::https://www.google.com|n:n:
